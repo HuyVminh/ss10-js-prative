@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Hãy nhập điểm kiểm tra");
+        let b = +prompt("Hãy nhập điểm giữa kỳ");
+        let c = +prompt("Hãy nhập điểm cuối kỳ");
+        let s = (a + b + c) / 3;
+        let message = (s >= 8.0) ? ("bạn là học sinh loại GIỎI") : (s >= 6.5) ? ("bạn là học sinh loại KHÁ") : (s >= 5.0) ? ("bạn là học sinh loại TRUNG BÌNH") : ("bạn là học sinh loại YẾU");
+        console.log(message);
+    </script>
+</body>
+
+</html>

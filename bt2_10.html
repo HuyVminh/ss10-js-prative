@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Hãy nhập số điện gia đình bạn đã sử dụng (kWh)");
+        if (a > 0 && a <= 50) {
+            let t = 1728 * a;
+            document.write("giá điện là (đ): " + t);
+        } else if (a > 50 && a <= 100) {
+            let t = 50 * 1728 + (a - 50) * 1786;
+            document.write("giá điện là (đ): " + t);
+        } else if (a > 100 && a <= 200) {
+            let t = 50 * (1728 + 1786) + (a - 100) * 2074;
+            document.write("giá điện là (đ): " + t);
+        } else if (a > 200 && a <= 300) {
+            let t = 50 * (1728 + 1786) + 100 * 2074 + (a - 200) * 2612;
+            document.write("giá điện là (đ): " + t);
+        } else if (a > 300 && a <= 400) {
+            let t = 50 * (1728 + 1786) + 100 * (2074 + 2612) + (a - 300) * 2919;
+            document.write("giá điện là (đ): " + t);
+        } else if (a > 400) {
+            let t = 50 * (1728 + 1786) + 100 * (2074 + 2612 + 2919) + (a - 400) * 3015;
+            document.write("giá điện là (đ): " + t);
+        }
+        else {
+            document.write("không hợp lệ!");
+        }
+    </script>
+</body>
+
+</html>

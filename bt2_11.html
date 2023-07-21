@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Hãy nhập thu nhập của bạn (VND)");
+        if (a > 0 && a <= 5000000) {
+            let t = a * 0.05;
+            document.write("thuế thu nhập cá nhân của bạn là (VND) " + t);
+        } else if (a > 5000000 && a <= 10000000) {
+            let t = 250000 + (a - 5000000) * 0.1;
+            document.write("thuế thu nhập cá nhân của bạn là (VND) " + t);
+        } else if (a > 10000000 && a <= 18000000) {
+            let t = 750000 + (a - 10000000) * 0.15;
+            document.write("thuế thu nhập cá nhân của bạn là (VND) " + t);
+        } else if (a > 18000000 && a <= 32000000) {
+            let t = 1950000 + (a - 18000000) * 0.2;
+            document.write("thuế thu nhập cá nhân của bạn là (VND) " + t);
+        } else if (a > 32000000 && a <= 52000000) {
+            let t = 4750000 + (a - 32000000) * 0.25;
+            document.write("thuế thu nhập cá nhân của bạn là (VND) " + t);
+        } else if (a > 52000000 && a <= 80000000) {
+            let t = 9750000 + (a - 52000000) * 0.3;
+            document.write("thuế thu nhập cá nhân của bạn là (VND) " + t);
+        }
+        else if (a > 80000000) {
+            let t = 18150000 + (a - 80000000) * 0.35;
+            document.write("thuế thu nhập cá nhân của bạn là (VND) " + t);
+        }
+        else {
+            document.write("không hợp lệ!");
+        }
+    </script>
+</body>
+
+</html>
