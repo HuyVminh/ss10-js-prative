@@ -8,30 +8,27 @@
 </head>
 
 <body>
+    <!-- tính tiền điện sử dụng -->
     <script>
         let a = +prompt("Hãy nhập số điện gia đình bạn đã sử dụng (kWh)");
+        let t;
         if (a > 0 && a <= 50) {
-            let t = 1728 * a;
-            document.write("giá điện là (đ): " + t);
+            t = 1728 * a;
         } else if (a > 50 && a <= 100) {
-            let t = 50 * 1728 + (a - 50) * 1786;
-            document.write("giá điện là (đ): " + t);
+            t = 50 * 1728 + (a - 50) * 1786;
         } else if (a > 100 && a <= 200) {
-            let t = 50 * (1728 + 1786) + (a - 100) * 2074;
-            document.write("giá điện là (đ): " + t);
+            t = 50 * (1728 + 1786) + (a - 100) * 2074;
         } else if (a > 200 && a <= 300) {
-            let t = 50 * (1728 + 1786) + 100 * 2074 + (a - 200) * 2612;
-            document.write("giá điện là (đ): " + t);
+            t = 50 * (1728 + 1786) + 100 * 2074 + (a - 200) * 2612;
         } else if (a > 300 && a <= 400) {
-            let t = 50 * (1728 + 1786) + 100 * (2074 + 2612) + (a - 300) * 2919;
-            document.write("giá điện là (đ): " + t);
+            t = 50 * (1728 + 1786) + 100 * (2074 + 2612) + (a - 300) * 2919;
         } else if (a > 400) {
-            let t = 50 * (1728 + 1786) + 100 * (2074 + 2612 + 2919) + (a - 400) * 3015;
-            document.write("giá điện là (đ): " + t);
+            t = 50 * (1728 + 1786) + 100 * (2074 + 2612 + 2919) + (a - 400) * 3015;
         }
         else {
             document.write("không hợp lệ!");
         }
+        document.write("giá điện là (đ): " + t);
     </script>
 </body>
 
