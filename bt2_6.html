@@ -11,9 +11,15 @@
     <script>
         let a = +prompt("Hãy nhập số a");
         let b = +prompt("Hãy nhập số b");
-        let c = +prompt("Hãy nhập số c");
-        let x = (c - b) / a;
-        console.log(`pt ${a}x+${b}=${c} có nghiệm x=${x}`);
+        if (a == 0 && b == 0) {
+            document.write("phương trình có vô số nghiệm");
+        }
+        else if (a > 0 || a < 0) {
+            x = -b / a;
+            document.write("phương trình có nghiệm duy nhất là" +x);
+        } else {
+            document.write("phương trình vô nghiệm");
+        }
     </script>
 </body>
 
